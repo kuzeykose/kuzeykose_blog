@@ -1,11 +1,10 @@
 import React from 'react'
 import '../style/index.css'
 
-
+// { href: 'sosyalMedya', label: 'Sosyal Medya' }
 const links = [
   { href: 'index', label: 'Blog' },
   { href: 'Hakkimda', label: 'Hakkımda' },
-  { href: 'sosyalMedya', label: 'Sosyal Medya' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
