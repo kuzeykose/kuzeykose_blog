@@ -12,7 +12,7 @@ const blogPage = ({ posts }) => (
 
     <div className="container">
       <div className="mt-20 text-center">
-        <h1 className="text-5xl text-gray-900">Kuzey Köse</h1>
+        <h1 className="text-5xl text-gray-800">Kuzey Köse</h1>
       </div>
 
       <div className="flex flex-wrap">
@@ -21,20 +21,16 @@ const blogPage = ({ posts }) => (
             <Link href={post.slug}>
               <a className="flex content-between flex-wrap m-2 mt-4 rounded overflow-hidden shadow-lg h-full">
                 <div className="px-6 py-4">
-                  <img className="rounded h-40 w-full" src={post.image}></img>
+                  <img className="object-cover rounded h-40 w-full" src={post.image}></img>
                   <div className="font-bold text-xl mb-2 mt-2">
-
-                    <a className="text-xl mb-2 text-gray-900">{post.title}</a>
-
+                    <a className="font-semibold text-xl mb-2 text-gray-800 font-sans">{post.title}</a>
                   </div>
-                  <div className="text-gray-700 text-base">
+                  <div className="text-gray-700 text-lg">
                     <ReactMarkdown source={post.details} />
                   </div>
                 </div>
-                <div className="m-2 flex justify-end w-full">
-                  <div className="text-sm font-semibold text-gray-900">
-                    {post.date}
-                  </div>
+                <div className="m-2 flex justify-end w-full text-gray-700 font-sans">
+                  {post.date}
                 </div>
               </a>
             </Link>

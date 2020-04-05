@@ -11,11 +11,11 @@ const BlogPost = ({ post }) => (
       <div className="container">
         <div className="rounded overflow-hidden shadow-xl">
           <div className="m-8">
-            <div className="font-bold text-4xl m-4">{post.title}</div>
-            <div className="text-gray-900 text-xl text-base">
+            <div className="text-gray-800 font-thin text-4xl m-4">{post.title}</div>
+            <div className="text-gray-800 text-xl text-base">
               <ReactMarkdown source={post.allwriten} />
             </div>
-            <div className="flex mt-10 text-xl justify-end">{post.date}</div>
+            <div className="flex mt-10 justify-end font-sans">{post.date}</div>
           </div>
         </div>
       </div>
