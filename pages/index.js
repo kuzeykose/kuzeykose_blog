@@ -5,8 +5,6 @@ import ReactMarkdown from "react-markdown";
 import '../style/index.css';
 import Nav from "../components/nav";
 
-
-
 const blogPage = ({ posts }) => (
 
   <div>
