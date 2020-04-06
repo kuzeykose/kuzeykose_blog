@@ -7,15 +7,15 @@ import Nav from "../components/nav";
 const BlogPost = ({ post }) => (
   <div>
     <Nav />
-    <div className="mt-8">
+    <div className="mt-8 text-gray-800">
       <div className="container">
-        <div className="rounded overflow-hidden shadow-xl">
+        <div className="overflow-hidden">
           <div className="m-8">
-            <div className="text-gray-800 font-thin text-4xl m-4">{post.title}</div>
-            <div className="text-gray-800 text-xl text-base">
+            <div className="font-thin text-4xl m-4">{post.title}</div>
+            <div className="text-xl">
               <ReactMarkdown source={post.allwriten} />
             </div>
-            <div className="flex mt-10 justify-end font-sans">{post.date}</div>
+            <div className="flex mt-10 justify-end">{post.date}</div>
           </div>
         </div>
       </div>

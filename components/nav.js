@@ -13,7 +13,7 @@ const links = [
 
 const Nav = () => (
   <nav>
-    <ul className="flex flex-row justify-center">
+    <ul className="flex flex-row justify-center font-sans">
       {links.map(({ key, href, label }) => (
         <li className="px-4 py-2 m-1" key={key}>
           <a href={href}>{label}</a>
