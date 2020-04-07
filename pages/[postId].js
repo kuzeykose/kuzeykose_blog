@@ -32,8 +32,8 @@ const BlogPost = ({ post }) => (
 );
 
 BlogPost.getInitialProps = async ({ req, query }) => {
-  //kuzeykose.herokuapp.com
-  const res = await fetch(`http://kuzeykose.herokuapp.com/api/post/${query.postId}`);
+  //kuzeykose.com
+  const res = await fetch(`http://kuzeykose.com/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };

@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "next export"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
