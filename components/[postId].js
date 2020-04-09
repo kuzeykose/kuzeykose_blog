@@ -2,7 +2,7 @@ import React from "react";
 import fetch from "isomorphic-unfetch";
 import ReactMarkdown from "react-markdown";
 import '../style/index.css';
-import Nav from "../components/nav";
+import Nav from "./nav";
 
 const BlogPost = ({ post }) => (
   <div>
