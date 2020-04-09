@@ -2,7 +2,7 @@ import React from "react";
 import fetch from "isomorphic-unfetch";
 import ReactMarkdown from "react-markdown";
 import '../style/index.css';
-import Nav from "./nav";
+import Nav from "../components/nav";
 
 const BlogPost = ({ post }) => (
   <div>
@@ -33,7 +33,7 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   //kuzeykose.com
-  const res = await fetch(`http://kuzeykose.herokuapp.com/api/post/${query.postId}`);
+  const res = await fetch(`http://localhost:3000/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };
