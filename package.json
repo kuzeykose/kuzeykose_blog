@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
-    "start": "serve ./out",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "export": "yarn build && next export"
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
