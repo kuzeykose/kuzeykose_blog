@@ -52,7 +52,7 @@ const blogPage = ({ posts }) => (
 
 blogPage.getInitialProps = async ({ req }) => {
   //kuzeykose.herokuapp.com
-  const res = await fetch("http://localhost:3000/api/posts");
+  const res = await fetch("http://kuzeykose.com/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };
