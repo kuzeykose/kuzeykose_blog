@@ -12,7 +12,7 @@ module.exports = withCSS({
     const paths = {
       '/': { page: '/' },
       '/Hakkimda': { page: '/Hakkimda' },
-      '/[$postId]': { page: '/api/post/${postId}' }
+      '/[postId]': { page: '${postId}' }
     }
     //   const blogs = blogposts
     //   Object.entries(blogs).forEach(([postId]) => {
