@@ -1,5 +1,4 @@
 const withCSS = require('@zeit/next-css');
-import blogposts from './src/blog-posts'
 
 module.exports = withCSS({
   webpack: config => {
@@ -10,18 +9,18 @@ module.exports = withCSS({
     return config;
   },
   exportPathMap: async function () {
-    // pages we know about beforehand
     const paths = {
       '/': { page: '/' },
-      '/Hakkimda': { page: '/Hakkimda' }
+      '/Hakkimda': { page: '/Hakkimda' },
+      '/[$postId]': { page: '/api/post/${postId}' }
     }
-    const blogs = blogposts
-    Object.entries(blogs).forEach(([postId]) => {
-      paths[`/${postId}`] = {
-        page: '/api/post/[postId]', query: { postId: postId }
-      }
-    })
-    return paths
+    //   const blogs = blogposts
+    //   Object.entries(blogs).forEach(([postId]) => {
+    //     paths[`/${postId}`] = {
+    //       page: '/api/post/[postId]', query: { postId: postId }
+    //     }
+    //   })
+    //   return paths
   }
 });
 
