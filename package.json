@@ -23,6 +23,7 @@
     "react-markdown": "^4.3.1"
   },
   "devDependencies": {
+    "jdown": "^1.0.3",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.1.4"
   }
