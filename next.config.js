@@ -20,7 +20,7 @@ module.exports = withCSS({
     //       page: '/api/post/[postId]', query: { postId: postId }
     //     }
     //   })
-    //   return paths
+    return paths
   }
 });
 
