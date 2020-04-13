@@ -12,14 +12,8 @@ module.exports = withCSS({
     const paths = {
       '/': { page: '/' },
       '/Hakkimda': { page: '/Hakkimda' },
-      '/[postId]': { page: '${postId}' }
+      '/online-egitime-gecmek': { page: '/online-egitime-gecmek' }
     }
-    //   const blogs = blogposts
-    //   Object.entries(blogs).forEach(([postId]) => {
-    //     paths[`/${postId}`] = {
-    //       page: '/api/post/[postId]', query: { postId: postId }
-    //     }
-    //   })
     return paths
   }
 });
