@@ -12,7 +12,7 @@ module.exports = withCSS({
     const paths = {
       '/': { page: '/' },
       '/Hakkimda': { page: '/Hakkimda' },
-      '/online-egitime-gecmek': { page: '/online-egitime-gecmek' }
+      '/api/post/online-egitime-gecmek': { page: '/api/post/online-egitime-gecmek' }
     }
     return paths
   }
