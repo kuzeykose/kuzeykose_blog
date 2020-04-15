@@ -22,6 +22,7 @@ module.exports = withCSS({
       '/yazilima-nereden-baslamaliyim': { page: '/api/post', query: { title: 'yazilima-nereden-baslamaliyim' } }
     }
     return paths
-  }
+  },
+  exportTrailingSlash: true
 });
 
