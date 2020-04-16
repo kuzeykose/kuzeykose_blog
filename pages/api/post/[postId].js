@@ -1,3 +1,4 @@
+
 import { getPosts } from "../../../src/blog-posts";
 
 const posts = getPosts();

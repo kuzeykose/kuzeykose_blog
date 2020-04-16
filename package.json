@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "export": "npm run build && next export"
+    "export": "next export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
