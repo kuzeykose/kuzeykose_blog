@@ -52,7 +52,7 @@ const blogPage = ({ posts }) => (
 
 blogPage.getInitialProps = async ({ req }) => {
   //kuzeykose.herokuapp.com
-  const res = await fetch("https://kuzeykose-blog.now.sh/api/posts");
+  const res = await fetch("https://kuzey-kose.herokuapp.com/api/posts");
   const json = await res.json();
   return { posts: json.posts };
 };
