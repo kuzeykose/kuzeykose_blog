@@ -33,7 +33,7 @@ const BlogPost = ({ post }) => (
 
 BlogPost.getInitialProps = async ({ req, query }) => {
   //kuzeykose.com
-  const res = await fetch(`https://app.netlify.com/sites/confident-euclid-be6319/overview/api/post/${query.postId}`);
+  const res = await fetch(`https://kuzeykose-blog.now.sh/api/post/${query.postId}`);
   const json = await res.json();
   return { post: json.post };
 };
